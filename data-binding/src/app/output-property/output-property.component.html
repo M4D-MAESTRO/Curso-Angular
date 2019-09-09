@@ -1,0 +1,12 @@
+<div class="input-group">
+  <div class="input-group-prepend">
+    <button class="btn btn-danger" (click)="decrementa()" style="width: 50px; height: 50px;">-</button>
+  </div>
+
+  <input class="form-control mx-1 mt-1" type="text" #campoInput [value]="valor" readonly style="max-width: 10%;">
+
+  <div class="input-group-prepend">
+    <button class="btn btn-primary" (click)="incrementa()" style="width: 50px; height: 50px;">+</button>
+  </div>
+
+</div>

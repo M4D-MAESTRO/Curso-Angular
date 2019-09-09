@@ -7,15 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
-  url:string = "http://loiane.com"
-  cursoAngular:boolean = true;
-  urlImg:string = "http://lorempixel.com/400/200/sports"
+  url: string = "http://loiane.com"
+  cursoAngular: boolean = true;
+  urlImg: string = "http://lorempixel.com/400/200/sports";
+  
 
-  getValor(){
+  getValor() {
     return 1;
   }
 
-  getCurtirCurso(){
+  getCurtirCurso() {
     return true;
   }
 

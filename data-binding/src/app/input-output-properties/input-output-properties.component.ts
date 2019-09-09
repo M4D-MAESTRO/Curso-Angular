@@ -8,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class InputOutputPropertiesComponent implements OnInit {
 
   nomeCurso: string = 'Angular';
+  valorInicial: number = 15;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onMudouValor(evento){
+    console.log(evento.novoValor)
   }
 
 }
