@@ -1,0 +1,16 @@
+<h5>*ngIf</h5>
+
+<div *ngIf="cursos.length > 0; else semCurso">
+    Lista de cursos:
+</div>
+
+<ng-template #semCurso>
+    Não há cursos a serem mostrados :/
+</ng-template>
+
+<div *ngIf="mostrarCursos; else mostarEsconder">Curso 01</div>
+
+<ng-template #mostarEsconder>Não há mais cursos disponíveis :(</ng-template>
+
+<br>
+<button class="btn btn-success" (click)="onMostrar()">{{ mostrarCursosTemplate }}</button>

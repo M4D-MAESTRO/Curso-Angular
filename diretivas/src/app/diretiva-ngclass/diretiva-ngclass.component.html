@@ -1,0 +1,10 @@
+<h1>
+    <i class="far fa-star" [class.far.fa-star]="isFav" [class.fas.fa-star]="!isFav" (click)="favoritar()"></i>
+</h1>
+
+<h1>
+    <i class="far fa-star" [ngClass]="{
+            'far fa-star': isFav,
+            'fas fa-star': !isFav
+        }" (click)="favoritar()"></i>
+</h1>

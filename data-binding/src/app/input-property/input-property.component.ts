@@ -6,6 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./input-property.component.css']
 })
 export class InputPropertyComponent implements OnInit {
+  
   @Input('nome')
   nomeCurso: string = ''
 
